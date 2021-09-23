@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-damaram-frontend';
+
+  toAbout() {
+    document.getElementById("box").scrollIntoView();
+  }
 }
