@@ -1,14 +1,17 @@
 .quotes {
     color: white;
     padding-block-start: 7.8%;
-    /*padding-inline-start: 19%;
-    padding-inline-end: 0%;*/
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     float:left; 
-    background:Red;
     width:50%;
-    height:500px;
+    height:390.5px;
+    padding-top: 15%;
+    font-size: larger;
+}
 
+h3 {
+    padding-left: 25%;
+    
 }
 
 .images {
@@ -25,14 +28,13 @@ img {
 
 h2 {
     color: #04AA6D;
-    padding-inline-start: 45%;
-    padding-block-start: 45%;
+    padding-inline-start: 42%;
+    padding-block-start: 48%;
     font-size: xx-large;
 }
 
 #serviceimg {
     padding-block-start: 5%;
-    padding-inline-start: 17%;
 }
 
 .leftbox {
