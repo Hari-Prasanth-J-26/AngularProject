@@ -28,24 +28,53 @@ img {
 
 h2 {
     color: #04AA6D;
-    padding-inline-start: 42%;
+    padding-inline-start: 43%;
     padding-block-start: 48%;
     font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #serviceimg {
     padding-block-start: 5%;
+    width: 70%;
+    height: 70%;
+    padding-inline-start: 15%;
+}
+
+.box {
+    padding-block-start: 10%;
 }
 
 .leftbox {
     float:left; 
-    background:Red;
     width:50%;
     height:500px;
 }
+
 .rightbox{
     float:right; 
-    background:Green;
+    background:#04AA6D;
     width:50%;
     height:500px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 40%;
+    padding-top: 10%;
+    font-weight: 900;
+}
+
+#aboutuspara {
+    font-size: large;
+    font-weight: 600;
+    padding-top: 8%;
+    padding-left: 12%;
+    padding-right: 12%;
+    word-spacing: 6x;
+    text-align: justify;
+    line-height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
 }
