@@ -1,4 +1,38 @@
-/* .container{
-    background: url(https://www.esparkinfo.com/wp-content/uploads/2020/10/Surveying-The-Best-IDE-for-AngularJS-Development-In-Detail.jpg);
-    
-} */
+.quotes {
+    float: left;
+    color: white;
+    padding-block-start: 7%;
+    padding-inline-start: 19%;
+    padding-inline-end: 18%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+    padding-block-start: 2%;
+}
+
+.service {
+    color: #04AA6D;
+    padding-block-start: 5%;
+    padding-inline-start: 45%;
+}
+
+#serviceimg {
+    padding-block-start: 2%;
+    padding-inline-start: 17%;
+}
+
+.leftbox {
+    float:left; 
+    background:Red;
+    width:50%;
+    height:500px;
+}
+.rightbox{
+    float:right; 
+    background:Green;
+    width:50%;
+    height:500px;
+}
