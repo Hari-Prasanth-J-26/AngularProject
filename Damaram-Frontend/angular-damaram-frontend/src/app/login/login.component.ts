@@ -12,7 +12,7 @@ export class LoginComponent {
 
   private user: User;
 
-  constructor(private service: MainService) {
+  constructor(private service: MainService, private router: Router) {
     this.user = new User();
   }
 
@@ -23,4 +23,10 @@ export class LoginComponent {
     })
   }
 
+  public loginUser(): void {
+    this.service.loginUser(this.user).subscribe(res => {
+      this.user = new User();
+      this.router.navigate(['/userhome']);
+    })
+  }
 }
