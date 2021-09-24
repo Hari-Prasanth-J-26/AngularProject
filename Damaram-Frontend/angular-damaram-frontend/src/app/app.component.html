@@ -23,18 +23,206 @@
 
 
 
-
+<!-- <header>
 <div class="container">
   <ul>
     <div class="navbar">
       <li style="float:right"><a routerLink="/login">Login</a></li>
       <li><a href="#contact">Contact</a></li>
-      <!-- <li><a href="#developer">Developer</a></li>
-      <li><a href="#admin">Admin</a></li> -->
+       <li><a href="#developer">Developer</a></li>
+      <li><a href="#admin">Admin</a></li> 
       <li><a href="javascript: document.getElementById('box').scrollIntoView(true);">About us</a></li>
       <li><a href="javascript: document.getElementById('boxhome').scrollIntoView(true);">Home</a></li>
     </div>
   </ul>
+
   <router-outlet></router-outlet>
 </div>
+</header> -->
 
+
+
+
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="navbar">
+  <a class="navbar-brand" href="#">DAMARAM</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <!-- <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Login</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+
+<!-- <div class="row">
+    <div class="col-md-6t" style="background-color:yellow;" >
+      <p>
+        HEY, WHAT'S UP?  HOW'S BUSINESS?<br>
+        YOU KNOW WHAT,<br>
+        LET ME HELP YOU DIGITALIZE IT!<br>
+        UPGRADE YOUR BUSINESS<br>
+        TO THE NEXT LEVEL NOW!
+      </p> 
+    </div>
+    <div class="col-md-6" style="background-color: red;">
+      <img src="assets\images\firstimage.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+</div> -->
+
+
+<!-- <div class="row">
+    <div class="col-md-6" id="left">
+      <p>
+        HEY, WHAT'S UP?  HOW'S BUSINESS?<br>
+        YOU KNOW WHAT,<br>
+        LET ME HELP YOU DIGITALIZE IT!<br>
+        UPGRADE YOUR BUSINESS<br>
+        TO THE NEXT LEVEL NOW!
+      </p> 
+    </div>
+    <div class="col-md-6" id="right">
+      <img src="assets\images\firstimage.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+</div> -->
+<section id="home">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12 order-1" id="leftquotes">
+      <p>
+        HEY, WHAT'S UP?  HOW'S BUSINESS?<br>
+        YOU KNOW WHAT,<br>
+        LET ME HELP YOU DIGITALIZE IT!<br>
+        UPGRADE YOUR BUSINESS<br>
+        TO THE NEXT LEVEL NOW!
+      </p> 
+    </div>
+    <div class="col-lg-6 col-md-6 col-12 py-lg-0 py-3 order-sm-2" id="rightimg">
+      <img src="assets\images\final.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="services-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-content text-center">
+            <h1>OUR SERVICES</h1>
+            <p>
+              Damaram is a web service provider offering many services such as web application development, 
+              mobile application development, software development and, other minor services like logo designing, 
+              social media marketing, content creation, etc. The website lands and manages clients. 
+              It provides services to create a strong technical and online presence for an individual or a business.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img1.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>Web Designing</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img2.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>App Development</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img3.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>Logo Designing</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img4.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>Web Designing</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img5.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>App Development</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+          <div class="card">
+            <img src="assets\images\img6.jpg" class="img-fluid" alt="Responsive image"> 
+            <div class="pt-3">
+              <h3>Logo Designing</h3>
+              <p>click the button below to order this service...</p>
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>

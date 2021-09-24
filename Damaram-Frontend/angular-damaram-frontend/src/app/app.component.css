@@ -1,4 +1,4 @@
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,4 +38,99 @@ ul {
     top: 0; 
     width: 100%;
     background-color: black;
-  }
+  } */
+
+
+
+#navbar {
+  background-color: black;
+  
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar-nav .nav-link{
+  color: white;
+  font-weight: 450;
+  padding: 30px 15px 30px 15px; 
+}
+.navbar-nav a:hover:not(.active) {
+   background-color:#06ad70; 
+  /* border-bottom: 2px solid #04AA6D ; */
+}
+
+/* .row {
+  height: 378px;
+} */
+
+.col-md-6 {
+  height: 100%;
+  
+}
+
+h1 {
+  color:#06ad70; 
+}
+
+p {
+  color: white;
+}
+
+/* #left {
+  background-color: aqua;
+  width: 100;
+  min-height: 100hv;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-block-start: 0%;
+}
+
+#right {
+  background-color:rgb(79, 10, 240);
+} */
+
+#leftquotes {
+  background-color: black;
+  /* min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; */
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10%;
+  padding-top: 12%;
+}
+
+#rightimg {
+  background-color: black;
+  /* min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center; */
+}
+
+section {
+  min-height: 68vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: black;
+}
+
+#services .card{
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+
+#services .card img {
+  border-radius: 0.9375rem;
+  width: 350px;
+  height: 305px;
+  object-fit: cover;
+}

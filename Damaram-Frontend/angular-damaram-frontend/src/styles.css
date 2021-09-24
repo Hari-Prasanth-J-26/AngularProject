@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-* {
+/* * {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,4 +7,10 @@
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-}
+} */
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    }
