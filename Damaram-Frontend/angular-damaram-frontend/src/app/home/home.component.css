@@ -6,7 +6,7 @@
     width:50%;
     height:390.5px;
     padding-top: 15%;
-    font-size: larger;
+    font-size: x-large;
 }
 
 h3 {
@@ -41,7 +41,7 @@ h2 {
     padding-inline-start: 15%;
 }
 
-.box {
+#box {
     padding-block-start: 10%;
 }
 
