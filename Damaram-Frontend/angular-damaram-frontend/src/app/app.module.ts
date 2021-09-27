@@ -12,6 +12,10 @@ import { UserhomeComponent } from './userhome/userhome.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component';
+import { ViewUsersComponent } from './view-users/view-users.component';
+import { UsersComponent } from './users/users.component';
 
 
 @NgModule({
@@ -23,6 +27,10 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
     HomeComponent,
     ServicesComponent,
     AdminhomeComponent,
+    UpdateUserComponent,
+    DeleteUserComponent,
+    ViewUsersComponent,
+    UsersComponent,
   
   ],
   imports: [

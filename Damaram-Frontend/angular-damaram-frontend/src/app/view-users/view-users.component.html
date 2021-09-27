@@ -1,0 +1,38 @@
+<div class="sidebar">
+    <!-- <a href="javascript: document.getElementById('profile').scrollIntoView(true);">PROFILE</a> -->
+    <a routerLink="/adminhome">PROFILE</a>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/developers">DEVELOPERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+
+<div class="content">
+    <section id="view">
+        <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr> -->
+              <tr *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.contact}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+</div>

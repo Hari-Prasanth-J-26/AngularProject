@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #4BD1A0;
+    /* background-color: #4BD1A0; */
+    background-color: #FF9C00;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -19,7 +20,7 @@
   
   .sidebar a:hover {
     /* background-color: #04AA6D; */
-    background-color: #FF9C00;
+    background-color: #4BD1A0;
     color: white;
 }
 
@@ -120,13 +121,14 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: rgb(49, 6, 22);
+    background-color: rgb(5, 70, 90);
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(5, 70, 90);
+    /* background-color: rgb(5, 70, 90); */
+    background-color: rgb(49, 6, 22);
     color: white;
     transform: rotateY(180deg);
   }

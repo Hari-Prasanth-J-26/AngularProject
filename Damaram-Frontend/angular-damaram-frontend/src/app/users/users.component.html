@@ -1,0 +1,58 @@
+<div class="sidebar">
+    <!-- <a href="javascript: document.getElementById('profile').scrollIntoView(true);">PROFILE</a> -->
+    <a routerLink="/adminhome">PROFILE</a>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/developers">DEVELOPERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+
+<div class="content">
+    <section id="users">
+        <!-- <div class="container">
+            <nav class="nav">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/updateUser">Update Player</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/deleteUser">Delete Player</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/viewUsers">View Players</a>
+              </li>
+            </nav>
+          </div> -->
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 my-sm-0">
+              <div class="card">
+                <!-- <div class="inner">
+                  <img src="assets\images\image1.jpg" class="img-fluid" alt="Responsive image"> 
+                </div> -->
+                <div id="pt-3" class="card-body">
+                  <h3 class="card-title">View Users</h3>
+                  <p>click the button below to view the users...</p>
+                  <button type="button" class="btn" routerLink="/viewusers">VIEW</button>
+                </div>
+              </div>
+            </div> 
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 my-sm-0">
+                <div class="card">
+                  <div id="pt-3" class="card-body">
+                    <h3 class="card-title">Update User</h3>
+                    <p>click the button below to update the user...</p>
+                    <button type="button" class="btn">UPDATE</button>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 my-sm-0">
+                <div class="card">
+                  <div id="pt-3" class="card-body">
+                    <h3 class="card-title">Delete User</h3>
+                    <p>click the button below to delete the user...</p>
+                    <button type="button" class="btn">DELETE</button>
+                  </div>
+                </div>
+              </div> 
+        </div>
+    </section>
+</div>

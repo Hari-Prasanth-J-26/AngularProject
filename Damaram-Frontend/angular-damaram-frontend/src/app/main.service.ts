@@ -20,5 +20,16 @@ export class MainService {
   public loginUser(user: User): Observable<User> {
     return this.http.post<User>(this.url+"login", user);
   }
+
+  public updateUser(user: User): Observable<User> {
+    return this.http.put<User>(this.url, user);
+  }
+  public deleteUser(id: number): void {
+    this.http.delete(this.url + "/{id}");
+  }
+
+  public getAllUsers(): Observable<User[]> {
+    return this.http.get<User[]>(this.url + "s");
+  }
  
 }
