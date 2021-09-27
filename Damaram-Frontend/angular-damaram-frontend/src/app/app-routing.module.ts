@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ServicesComponent } from './services/services.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'services', component: ServicesComponent},
   {path:'adminhome', component: AdminhomeComponent},
   {path:'users', component: UsersComponent},
-  {path:'viewusers', component: ViewUsersComponent}
+  {path:'viewusers', component: ViewUsersComponent},
+  {path:'deleteuser', component: DeleteUserComponent}
 ];
 
 @NgModule({

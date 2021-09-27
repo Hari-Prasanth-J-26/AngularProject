@@ -10,7 +10,7 @@ export class MainService {
 
   private url: string;
   constructor(private http: HttpClient) {
-    this.url = "http://localhost:7000/";
+    this.url = "http://localhost:8080/";
   }
 
   public registerUser(user: User): Observable<User> {
@@ -24,12 +24,17 @@ export class MainService {
   public updateUser(user: User): Observable<User> {
     return this.http.put<User>(this.url, user);
   }
+  // public deleteUser(id: number): void {
+  //   this.http.delete(this.url + "user/{id}");
+  // }
+
   public deleteUser(id: number): void {
-    this.http.delete(this.url + "/{id}");
+    this.http.delete(this.url + "user/{id}");
   }
 
   public getAllUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.url + "s");
+    return this.http.get<User[]>(this.url + "users");
   }
+
  
 }

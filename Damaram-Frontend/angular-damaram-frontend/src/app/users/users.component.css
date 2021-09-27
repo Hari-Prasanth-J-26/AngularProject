@@ -48,7 +48,7 @@
   #users .card{
     border: none;
     /* background-color: transparent; */
-    background-color: #748175;
+    background-color: #4BD1A0;
     border-radius: 0.9375rem;
     padding-top: 40px;
     border-radius: 0.9375rem;
@@ -63,21 +63,22 @@
   } */
 
   #pt-3 h3 {
-    color:yellow;
+    /* color: rgb(167, 5, 94); */
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
     font-weight: bolder;
   }
   
-  .card-body .btn {
-    background-color: #03af0c;
-  }
+  /* .card-body .btn {
+    margin: 10% 35%;
+  } */
   
   #pt-3 p {
-    color: white;
+    color: yellow;
   }
   
   .btn {
-    color: black;
-    font-weight: bold;
+    color: white;
+    background-color: #ff5100;
   }

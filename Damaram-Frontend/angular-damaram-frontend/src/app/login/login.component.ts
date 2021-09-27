@@ -11,9 +11,11 @@ import { User } from '../user';
 export class LoginComponent {
 
   private user: User;
+  private userDetails: User;
 
   constructor(private service: MainService, private router: Router) {
     this.user = new User();
+    this.userDetails = new User();
   }
 
 
@@ -25,6 +27,7 @@ export class LoginComponent {
 
   public loginUser(): void {
     this.service.loginUser(this.user).subscribe(res => {
+      this.userDetails = this.user;
       this.user = new User();
       this.router.navigate(['/userhome']);
     })

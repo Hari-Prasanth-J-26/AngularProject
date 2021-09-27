@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { MainService } from '../main.service';
 
 @Component({
   selector: 'app-delete-user',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteUserComponent implements OnInit {
 
-  constructor() { }
+  private id: number;
+
+  constructor(private service: MainService, private router: Router) { }
 
   ngOnInit() {
+    
   }
 
+  // public deleteUser() {
+  //   this.service.deleteUser(this.id).subscribe(res => {
+  //     this.id = null;
+  //     this.router.navigate(["/viewusers"]);
+  //   });
+
+  public deleteUSer(){
+    this.service.deleteUser(this.id);
+    this.router.navigate(["/viewusers"]);
+  }
+  
 }

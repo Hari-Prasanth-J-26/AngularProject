@@ -1,1 +1,24 @@
-<p>delete-user works!</p>
+<div class="sidebar">
+    <!-- <a href="javascript: document.getElementById('profile').scrollIntoView(true);">PROFILE</a> -->
+    <a routerLink="/adminhome">PROFILE</a>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/developers">DEVELOPERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+
+<div class="content">
+    <section id="deleteuser">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mb-lg-0 mb-5 my-sm-0">
+              <div class="card">
+                <div class="form-outline">
+                    <label class="form-label" for="typeNumber">Enter User Id</label>
+                    <input type="number" id="typeNumber" class="form-control" ([ngModel])="id" />
+                    <button type="button" class="btn btn-danger" (click)="deleteUser()">CONFIRM</button>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+    </section>
+</div>

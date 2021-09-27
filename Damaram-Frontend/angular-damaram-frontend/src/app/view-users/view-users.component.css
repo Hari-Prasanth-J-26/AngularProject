@@ -31,4 +31,8 @@
 
   .content {
     margin-left: 200px;
+    background-color: black;
+    min-height: 81.5vh;
 }
+
+
