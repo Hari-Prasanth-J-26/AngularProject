@@ -10,6 +10,8 @@ import { MainService } from './main.service';
 import { RegisterComponent } from './register/register.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { HomeComponent } from './home/home.component';
+import { ServicesComponent } from './services/services.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     UserhomeComponent,
     HomeComponent,
+    ServicesComponent,
+    AdminhomeComponent,
   
   ],
   imports: [

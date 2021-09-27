@@ -45,7 +45,9 @@
 
 
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="navbar">
-  <a class="navbar-brand" href="#">DAMARAM</a>
+  <a class="navbar-brand" href="#">
+    <img src="assets\images\logo.jpeg" class="img-fluid" alt="Responsive image">
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -55,17 +57,22 @@
       <!-- <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li> -->
+
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="javascript: document.getElementById('home').scrollIntoView(true);">Home</a>
+      </li> -->
       <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
+        <a class="nav-link" href="javascript: document.getElementById('aboutus').scrollIntoView(true);">About us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="javascript: document.getElementById('services').scrollIntoView(true);">Services</a>
       </li>
+      
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="javascript: document.getElementById('contactform').scrollIntoView(true);">Contact</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/login">Login</a>
@@ -123,7 +130,9 @@
       <img src="assets\images\firstimage.jpg" class="img-fluid" alt="Responsive image">
     </div>
 </div> -->
-<section id="home">
+
+
+<!-- <section id="home">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-12 order-1" id="leftquotes">
       <p>
@@ -140,6 +149,25 @@
   </div>
 </section>
 
+
+<section id="aboutus">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12" id="leftimg">
+      <img src="assets\images\aboutus.jpg" class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="col-lg-6 col-md-6 col-12 px-sm-3" id="rightabout">
+      <h1>ABOUT US</h1>
+      <p>GET YOUR BRAND LAUNCHED ONLINE WITH US DAMARAM. 
+        WE WILL MAKE YOU HEARD FOR WE MAKE A LOT OF NOISE WHEN HIRED! 
+        LET IT BE A BLOG FOR YOUR PROFILE OR CREATING AN ONLINE PRESENCE FOR YOUR BUSINESS YOU WILL UP IN NO TIME.
+        REACH OUT TO THE WORLD AND SHOW YOURSELF FOR THE GEM YOU ARE. 
+        PACKED AND ARMED WITH THE BEST PRICES AND SERVICES WE ARE WAITING FOR YOUR CALL!</p>
+    </div>
+    </div>
+  </div>
+</section>
+
 <section id="services">
   <div class="services-wrapper">
     <div class="container">
@@ -147,7 +175,7 @@
         <div class="col-sm-12">
           <div class="text-content text-center">
             <h1>OUR SERVICES</h1>
-            <p>
+            <p class="size">
               Damaram is a web service provider offering many services such as web application development, 
               mobile application development, software development and, other minor services like logo designing, 
               social media marketing, content creation, etc. The website lands and manages clients. 
@@ -157,65 +185,77 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 my-sm-0">
           <div class="card">
-            <img src="assets\images\img1.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>Web Designing</h3>
+            <div class="inner">
+              <img src="assets\images\image1.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">Web Designing</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn">Book Now</button>
             </div>
           </div>
         </div> 
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 ">
           <div class="card">
-            <img src="assets\images\img2.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>App Development</h3>
+            <div class="inner">
+              <img src="assets\images\image2.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">App Development</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn">Book Now</button>
             </div>
           </div>
         </div> 
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 ">
           <div class="card">
-            <img src="assets\images\img3.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>Logo Designing</h3>
+            <div class="inner">
+              <img src="assets\images\image3.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">Logo Designing</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn">Book Now</button>
             </div>
           </div>
         </div> 
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-7 mb-5 ">
           <div class="card">
-            <img src="assets\images\img4.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>Web Designing</h3>
+            <div class="inner">
+              <img src="assets\images\image4.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">Social Media Marketing</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn">Book Now</button>
             </div>
           </div>
         </div> 
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-7 mb-5 ">
           <div class="card">
-            <img src="assets\images\img5.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>App Development</h3>
+            <div class="inner">
+              <img src="assets\images\image5.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">Email Marketing</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn">Book Now</button>
             </div>
           </div>
         </div> 
-        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+        <div class="col-lg-4 col-md-6 mb-lg-7 mb-5 "> 
           <div class="card">
-            <img src="assets\images\img6.jpg" class="img-fluid" alt="Responsive image"> 
-            <div class="pt-3">
-              <h3>Logo Designing</h3>
+            <div class="inner">
+              <img src="assets\images\image6.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">Content Marketing</h3>
               <p>click the button below to order this service...</p>
-              <button type="button" class="btn btn-warning">Order Now</button>
+              <button type="button" class="btn mb-lg-4">Book Now</button>
             </div>
           </div>
         </div> 
@@ -223,6 +263,90 @@
     </div>
   </div>
 </section>
+
+
+<div id="contactform">
+<section id="contact">
+<div class="container-fluid pb-2">
+  <h2 class="h1-responsive font-weight-bolder text-center" id="contactus">CONTACT US</h2>
+  <p class="text-center w-responsive col-lg-12 col-md-6 col-sm-12 my-lg-5 px-lg-5" id="para">Do you have any questions? Please do not hesitate to contact us directly.<br> Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form mb-0 ml-5 mr-sm-5" id="text">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">NAME</label>
+                      </div>
+                    </div>
+                  <div class="col-md-6">
+                      <div class="md-form mb-0 ml-5 mr-sm-5" id="text">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">EMAIL</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0 ml-5 mr-sm-5" id="text">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">SUBJECT</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form ml-5 mr-sm-5" id="text">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">MESSAGE</label>
+                    </div>
+                  </div>
+              </div>
+          </form>
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary ml-5" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Chennai, CA 94126, India</p>
+              </li>
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 91 81899-04358</p>
+              </li>
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>admin@damaram.com</p>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="footer">
+  <div class="social text-center">
+    <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+    <a class="btn btn-primary" style="background-color: #f50669;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+    <a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+    <a class="btn btn-primary" style="background-color: #d41a02;" href="#!" role="button"><i class="fab fa-google"></i></a>
+    <a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+  </div>
+  <ul class="list text-center">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#aboutus">ABOUT US</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#contactform">CONTACT</a></li>
+  </ul>
+  <p class="copyright text-center font-weight-bolder pb-2">
+    Damaram @ 2021
+  </p>
+</section> -->
 
 
 <router-outlet></router-outlet>

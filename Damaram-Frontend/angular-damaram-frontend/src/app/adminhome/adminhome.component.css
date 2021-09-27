@@ -1,0 +1,87 @@
+/* ----side bar------ */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /* background-color: #4BD1A0; */
+    background-color: #FF9C00;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4BD1A0;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .content {
+    margin-left: 200px;
+}
+
+/* -------profile-------*/
+
+#profile {
+    background-color:black;
+    height: 100vh;
+}
+
+.content {
+  margin-left: 200px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    /* background-color: rgb(49, 6, 22); */
+    background-color: rgb(5, 70, 90);
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: rgb(49, 6, 22);
+    color: white;
+    transform: rotateY(180deg);
+  }
