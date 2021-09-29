@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MainService } from './main.service';
 import { RegisterComponent } from './register/register.component';
@@ -16,6 +16,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { ViewUsersComponent } from './view-users/view-users.component';
 import { UsersComponent } from './users/users.component';
+import { RequirementformComponent } from './requirementform/requirementform.component';
 
 
 @NgModule({
@@ -31,12 +32,14 @@ import { UsersComponent } from './users/users.component';
     DeleteUserComponent,
     ViewUsersComponent,
     UsersComponent,
+    RequirementformComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [MainService],

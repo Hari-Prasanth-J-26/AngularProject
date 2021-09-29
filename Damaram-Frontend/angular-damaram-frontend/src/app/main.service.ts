@@ -28,8 +28,9 @@ export class MainService {
   //   this.http.delete(this.url + "user/{id}");
   // }
 
-  public deleteUser(id: number): void {
-    this.http.delete(this.url + "user/{id}");
+  public deleteUser(id: number): any {
+    // return this.http.delete(this.url + "user/{id}");
+     return this.http.delete("http://localhost:8080/user/"+id);
   }
 
   public getAllUsers(): Observable<User[]> {

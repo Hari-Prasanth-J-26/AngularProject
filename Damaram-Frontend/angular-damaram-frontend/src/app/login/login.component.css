@@ -214,6 +214,7 @@ a {
 
 #userlogin {
     background-color: black;
+    /* min-height: 96.5vh; */
 }
 
 .login-box {
@@ -221,6 +222,7 @@ a {
     margin: auto; 
     max-width: 525px;
     min-height: 670px;
+    /* min-height: 96.5vh; */
     position: relative;
     background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
@@ -393,14 +395,16 @@ a {
     text-decoration: none
 }
 
-.hr {
+/* .hr {
     height: 2px;
     margin: 60px 0 50px 0;
     background: rgba(255, 255, 255, .2)
-}
+} */
 
 .foot {
-    text-align: center
+    text-align: center;
+    font-weight: bold;
+    color: black;
 }
 
 /* .card {
@@ -411,3 +415,16 @@ a {
 ::placeholder {
     color: #b3b3b3
 } 
+
+
+/* -----validation------*/
+
+.invalid-feedback {
+    font-size: large;
+    font-weight: 500;
+    color:red;
+}
+
+.label {
+    font-weight: bold;
+}

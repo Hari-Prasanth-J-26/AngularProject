@@ -86,6 +86,8 @@
     transform: rotateY(180deg);
   }
 
-
+.details {
+  margin: 30%;
+}
 
 

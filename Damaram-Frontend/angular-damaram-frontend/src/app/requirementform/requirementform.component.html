@@ -1,0 +1,49 @@
+<div class="sidebar">
+    <!-- <a class="active" href="javascript: document.getElementById('profile').scrollIntoView(true);">PROFILE</a> -->
+    <a routerLink="/userhome">PROFILE</a>
+    <a routerLink="/services">SERVICES</a>
+    <a routerLink="/order">ORDERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+
+<div class="content">
+    <section id="rform">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">select service</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>[------Select service------]</option>
+                    <option>Web Designing</option>
+                    <option>App Development</option>
+                    <option>Logo Designing</option>
+                    <option>Social Media Marketing</option>
+                    <option>Email Marketing</option>
+                    <option>Content Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">To select more than 1 services</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>Web Designing</option>
+                    <option>App Development</option>
+                    <option>Logo Designing</option>
+                    <option>Social Media Marketing</option>
+                    <option>Email Marketing</option>
+                    <option>Content Marketing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Requirements</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Document</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+        </form>
+    </section>
+</div>

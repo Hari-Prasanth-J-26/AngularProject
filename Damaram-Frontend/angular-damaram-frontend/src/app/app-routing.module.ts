@@ -4,6 +4,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RequirementformComponent } from './requirementform/requirementform.component';
 import { ServicesComponent } from './services/services.component';
 import { UserhomeComponent } from './userhome/userhome.component';
 import { UsersComponent } from './users/users.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'adminhome', component: AdminhomeComponent},
   {path:'users', component: UsersComponent},
   {path:'viewusers', component: ViewUsersComponent},
-  {path:'deleteuser', component: DeleteUserComponent}
+  {path:'deleteuser', component: DeleteUserComponent},
+  {path:'requirementform', component: RequirementformComponent}
 ];
 
 @NgModule({

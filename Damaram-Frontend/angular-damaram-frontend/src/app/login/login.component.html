@@ -39,59 +39,99 @@
                     <input id="tab-2" type="radio" name="tab" class="sign-up">
                     <label for="tab-2" class="tab">SignUp</label>
                     <div class="login-space">
-                        <div class="login">
-                            <div class="group">
-                                <label for="pass" class="label">UserEmail</label>
-                                <input id="pass" type="text" class="input" [(ngModel)]="user.email" placeholder="Enter your email address"> 
-                            </div>
-                            <div class="group"> 
-                                <label for="pass" class="label">Password</label> 
-                                <input id="pass" type="password" class="input" [(ngModel)]="user.password" placeholder="Enter your password"> 
-                            </div>
-                            <!-- <div class="group"> 
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+                            <div class="login">
+                                <div class="group">
+                                    <label for="pass" class="label">UserEmail</label>
+                                    <input id="pass" formControlName="email" type="text" class="input" [(ngModel)]="user.email"
+                                        placeholder="Enter your email address" [ngClass]="{ 'is-invalid': submitted && l.email.errors }">
+                                        <div *ngIf="submitted && l.email.errors" class="invalid-feedback">
+                                            <div *ngIf="l.email.errors.required">Email is required</div>
+                                            <div *ngIf="l.email.errors.email">Email must be a valid email address</div>
+                                        </div>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" formControlName="password" type="password" class="input" [(ngModel)]="user.password"
+                                        placeholder="Enter your password" [ngClass]="{ 'is-invalid': submitted && l.password.errors }">
+                                        <div *ngIf="submitted && l.password.errors" class="invalid-feedback">
+                                            <div *ngIf="l.password.errors.required">Password is required</div>
+                                            <div *ngIf="l.password.errors.minlength">Password must be at least 6 characters</div>
+                                        </div>
+                                </div>
+                                <!-- <div class="group"> 
                                 <input id="check" type="checkbox" class="check" checked> 
                                 <label for="check"><span class="icon"></span> Keep me Signed in</label> 
                             </div> -->
-                            <div class="group"> 
-                                <input type="submit" class="button" value="Sign In" (click)="loginUser()"> 
-                            </div>
-                            <div class="hr">    
-                                <div class="foot"> 
-                                    <a href="#">Forgot Password?</a> 
+                                <div class="group">
+                                    <input type="submit" class="button mt-5" value="Sign In">
                                 </div>
+                                <!-- <div class="hr">
+                                    <div class="foot">
+                                        <a href="#signup">Forgot Password?</a>
+                                    </div>
+                                </div> -->
                             </div>
-                        </div>
+                        </form>
+                        <form [formGroup]="registerForm" (ngSubmit)="onSubmitRegister()">
                         <div class="sign-up-form">
-                            <div class="group"> 
-                                <label for="user" class="label">Username</label> 
-                                <input id="user" type="text" class="input" [(ngModel)]="user.name" placeholder="Create your Username"> 
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" type="text" formControlName="userName" class="input" [(ngModel)]="user.name"
+                                    placeholder="Create your Username" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }">
+                                    <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.userName.errors.required">User Name is required</div>
+                                    </div>
                             </div>
+
                            
+                            <div class="group">
+                                <label for="pass" class="label">Email Address</label>
+                                <input id="pass" formControlName="email" type="text" class="input" [(ngModel)]="user.email"
+                                    placeholder="Enter your email address" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Email is required</div>
+                                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                    </div>
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" formControlName="password" type="password" class="input" [(ngModel)]="user.password"
+                                    placeholder="Create your password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                        <div *ngIf="f.password.errors.required">Password is required</div>
+                                        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                                    </div>
+                            </div>
                             <!-- <div class="group"> 
-                                <label for="pass" class="label">Repeat Password</label> 
-                                <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> 
+                                <label for="pass" class="label">Confirm Password</label> 
+                                <input id="pass" formControlName="confirmPassword" type="password" class="input"
+                                 data-type="password" placeholder="Repeat your password" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"> 
+                                 <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.confirmPassword.errors.required">Confirm Password is required</div>
+                                    <div *ngIf="f.confirmPassword.errors.mustMatch">Passwords must match</div>
+                                </div>
                             </div> -->
-                            <div class="group"> 
-                                <label for="pass" class="label">Email Address</label> 
-                                <input id="pass" type="text" class="input" [(ngModel)]="user.email" placeholder="Enter your email address"> 
+                            <div class="group">
+                                <label for="pass" class="label">Contact</label>
+                                <input id="pass" formControlName="contact" type="text" class="input" [(ngModel)]="user.contact"
+                                    placeholder="Enter your contact number" [ngClass]="{ 'is-invalid': submitted && f.contact.errors }">
+                                    <div *ngIf="submitted && f.contact.errors" class="invalid-feedback">
+                                        <div *ngIf="f.contact.errors.required">Contact is required</div>
+                                        <div *ngIf="f.contact.errors.minlength">Contact must be 10 digit</div>
+                                    </div>
                             </div>
-                            <div class="group"> 
-                                <label for="pass" class="label">Password</label> 
-                                <input id="pass" type="password" class="input" [(ngModel)]="user.password" placeholder="Create your password"> 
-                            </div>
-                            <div class="group"> 
-                                <label for="pass" class="label">Contact</label> 
-                                <input id="pass" type="text" class="input" [(ngModel)]="user.contact" placeholder="Enter your contact number"> 
-                            </div>
-                            <div class="group"> 
-                                <input type="submit" class="button" value="Sign Up" (click)="registerUser()"> 
+                            <div class="group">
+                                <input type="submit" class="button mt-5" value="Sign Up">
+                                <!-- <input type="submit" class="button" value="Sign Up" (click)="registerUser()"> -->
                             </div>
                             <div class="hr">
-                                <div class="foot"> 
-                                    <label for="tab-1">Already Member?</label> 
+                                <div class="foot">
+                                    <label for="tab-1">Already Member?</label>
                                 </div>
                             </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>

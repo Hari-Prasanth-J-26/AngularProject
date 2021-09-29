@@ -37,42 +37,31 @@
 /* ------users CRUD------ */
 
 #users {
-    min-height: 81.5vh;
+    /* min-height: 81.5vh;
     display: flex;
     justify-content: center; 
-    align-items: center;
+    align-items: center; */
     background-color: black;
-    /* padding-top: 10%; */
+
   }
 
   #users .card{
     border: none;
-    /* background-color: transparent; */
     background-color: #4BD1A0;
     border-radius: 0.9375rem;
     padding-top: 40px;
     border-radius: 0.9375rem;
-    width: 350px;
-    height: 250px;
-    /* object-fit: cover;
-    transition: 1s; */
+    width: 330px;
+    height: 230px;
   }
-
-  /* h3 {
-    color:#4BD1A0; 
-  } */
 
   #pt-3 h3 {
-    /* color: rgb(167, 5, 94); */
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
   }
-  
-  /* .card-body .btn {
-    margin: 10% 35%;
-  } */
+
   
   #pt-3 p {
     color: yellow;
@@ -81,4 +70,9 @@
   .btn {
     color: white;
     background-color: #ff5100;
+  }
+
+  .btn:hover {
+    color: black;
+    background-color: rgb(231, 5, 156);
   }
