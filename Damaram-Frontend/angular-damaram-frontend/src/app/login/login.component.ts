@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { MainService } from '../main.service';
 import { User } from '../user';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { AlertifyService } from '../alertify.service';
 
 
 @Component({
@@ -17,11 +18,11 @@ export class LoginComponent implements OnInit{
   submitted = false;
 
   private user: User;
-  private userDetails: User;
+  // private userDetails: User;
 
-  constructor(private service: MainService, private router: Router, private formBuilder: FormBuilder) {
+  constructor(private service: MainService, private router: Router, private formBuilder: FormBuilder, private alertify:AlertifyService) {
     this.user = new User();
-    this.userDetails = new User();
+    // this.userDetails = new User();
   }
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
@@ -55,7 +56,7 @@ export class LoginComponent implements OnInit{
         return;
     }
     this.loginUser();
-    alert('LOGIN SUCCESSFULL :-)');
+    // alert('Processing :-)');
   }
 
   public registerUser(): void {
@@ -65,11 +66,15 @@ export class LoginComponent implements OnInit{
   }
 
   public loginUser(): void {
-    this.service.loginUser(this.user).subscribe(res => {
-      this.userDetails = this.user;
+    this.service.loginUser(this.user).subscribe(data => {
       this.user = new User();
+      alert('LOGIN SUCCESSFULL :-)');
+      localStorage.setItem('token',JSON.stringify(data));
       this.router.navigate(['/userhome']);
-    })
+    }) 
+    // data=>{
+    //   localStorage.setItem('token',JSON.stringify(data));
+    // })
   }
 
 
@@ -80,3 +85,5 @@ export class LoginComponent implements OnInit{
 
     
 }
+
+

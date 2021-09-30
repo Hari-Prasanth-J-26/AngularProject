@@ -1,0 +1,102 @@
+/* ----side bar------ */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #FF9C00;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4BD1A0;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  .content {
+    margin-left: 200px;
+    
+}
+
+
+/* ------place order-----*/
+h1 {
+    color:#4BD1A0; 
+  }
+  
+  #placeorder .card{
+    border: none;
+    background-color: transparent;
+    border-radius: 0.9375rem;
+    padding-top: 70px;
+  }
+  
+  #placeorder .card img {
+    border-radius: 0.9375rem;
+    width: 400px;
+    height: 305px;
+    object-fit: cover;
+    transition: 1s;
+  }
+  
+  #placeorder {
+    min-height: 81.5vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+  }
+  
+  .inner {
+    overflow: hidden;
+  }
+  
+  .card img:hover {
+    transform: scale(1.5);
+    transition: 1s;
+  }
+  
+  .size {
+    color: white;
+    font-weight: 400;
+    font-size: x-large;
+    padding-top: 5%;
+    font-family: serif;
+  }
+  
+  #pt-3 h3 {
+    color:yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+  }
+  
+  .card-body .btn {
+    background-color: #03af0c;
+  }
+  
+  #pt-3 p {
+    color: white;
+  }
+  
+  .btn {
+    color: black;
+    font-weight: bold;
+  }
+  

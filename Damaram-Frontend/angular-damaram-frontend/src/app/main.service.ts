@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, ObservedValueOf } from 'rxjs';
+import { Admin } from './admin';
+import { Order } from './order';
+import { Product } from './product';
 import { User } from './user';
 
 @Injectable({
@@ -37,5 +40,32 @@ export class MainService {
     return this.http.get<User[]>(this.url + "users");
   }
 
+  public adminlogin(admin: Admin): Observable<Admin> {
+    return this.http.post<Admin>(this.url+"adminlogin", admin);
+  } 
+  
+  public addProduct(product: Product): Observable<Product>{
+    return this.http.post<Product>(this.url+"addproduct", product);
+  }
  
+  public getUserById(id: number): Observable<User> {
+    return this.http.get<User>("http://localhost:8080/user/"+id);
+  }
+
+  public getUserByName(name: string): Observable<User[]> {
+    return this.http.get<User[]>("http://localhost:8080/users/name/"+name);
+  }
+
+  public getUserByEmail(email: string): Observable<User[]> {
+    return this.http.get<User[]>("http://localhost:8080/users/email/"+email);
+  }
+
+  public getUserByContact(contact: string): Observable<User[]> {
+    return this.http.get<User[]>("http://localhost:8080/users/contact/"+contact);
+  }
+
+  public placeOrder(order: Order): Observable<Order> {
+    return this.http.post<Order>("http://localhost:8080/user/placeorder", order);
+  }
+
 }

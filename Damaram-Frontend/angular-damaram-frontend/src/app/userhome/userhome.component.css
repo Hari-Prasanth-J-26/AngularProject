@@ -132,3 +132,8 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+  .details {
+    text-align: center;
+    margin-top: 25%;
+  }

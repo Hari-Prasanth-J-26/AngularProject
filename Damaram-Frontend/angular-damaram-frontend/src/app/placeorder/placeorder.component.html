@@ -1,0 +1,51 @@
+<div class="sidebar">
+    <a routerLink="/userhome">PROFILE</a>
+    <a routerLink="/services">SERVICES</a>
+    <a routerLink="/order">ORDERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+<div class="content">
+<section id="placeorder">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 my-sm-0">
+          <div class="card">
+            <div class="inner">
+              <img src="assets\images\standard.png" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">STANDARD</h3>
+              <p>Standard will make your service good</p>
+              <p>Rs.20,000</p>
+              <button type="button" class="btn" (click)="placeOrder()">Place Order</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 ">
+          <div class="card">
+            <div class="inner">
+              <img src="assets\images\elite.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">ELITE</h3>
+              <p>Elite will make your service best</p>
+              <p>Rs.30,000</p>
+              <button type="button" class="btn" (click)="placeOrder()">Place Order</button>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5 ">
+          <div class="card">
+            <div class="inner">
+              <img src="assets\images\premium.jpg" class="img-fluid" alt="Responsive image"> 
+            </div>
+            <div id="pt-3" class="card-body">
+              <h3 class="card-title">PREMIUM</h3>
+              <p>Premium Quality will make your service loyal</p>
+              <p>Rs.50,000</p>
+              <button type="button" class="btn" (click)="placeOrder()">Place Order</button>
+            </div>
+          </div>
+        </div> 
+      </div>
+</section>
+</div>

@@ -1,0 +1,48 @@
+<section id="adminlogin">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="login-box">
+                <div class="login-snip">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                    <label for="tab-1" class="tab">Login</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up">
+                    <label for="tab-2" class="tab"></label>
+                    <div class="login-space">
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+                            <div class="login">
+                                <div class="group">
+                                    <label for="pass" class="label">UserEmail</label>
+                                    <input id="pass" formControlName="adminEmail" type="text" class="input"
+                                        [(ngModel)]="admin.adminEmail" placeholder="Enter your email address"
+                                        [ngClass]="{ 'is-invalid': submitted && l.email.errors }">
+                                    <div *ngIf="submitted && l.email.errors" class="invalid-feedback">
+                                        <div *ngIf="l.email.errors.required">Email is required</div>
+                                        <div *ngIf="l.email.errors.email">Email must be a valid email address</div>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" formControlName="adminPassword" type="password" class="input"
+                                        [(ngModel)]="admin.adminPassword" placeholder="Enter your password"
+                                        [ngClass]="{ 'is-invalid': submitted && l.password.errors }">
+                                    <div *ngIf="submitted && l.password.errors" class="invalid-feedback">
+                                        <div *ngIf="l.password.errors.required">Password is required</div>
+                                        <div *ngIf="l.password.errors.minlength">Password must be at least 6 characters
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group">
+                                    <input type="submit" class="button mt-5" value="Sign In">
+                                </div>
+
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

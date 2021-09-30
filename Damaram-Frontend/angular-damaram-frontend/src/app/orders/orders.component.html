@@ -1,0 +1,30 @@
+<div class="sidebar">
+    <a routerLink="/adminhome">PROFILE</a>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/orders">ORDERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+  </div>
+  <div class="content">
+    <section id="orders">
+        <table class="table table-striped table-dark table-responsive-lg">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Order Id</th>
+                <th scope="col">Order Status</th>
+                <th scope="col">Product Id</th>
+                <th scope="col">User Id</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{order.orderId}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.contact}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+</div>

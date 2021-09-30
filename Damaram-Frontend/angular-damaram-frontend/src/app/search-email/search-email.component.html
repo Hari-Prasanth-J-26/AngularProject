@@ -1,0 +1,21 @@
+<div class="sidebar">
+    <a routerLink="/adminhome">PROFILE</a>
+    <a routerLink="/users">USERS</a>
+    <a routerLink="/orders">ORDERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+  </div>
+  <div class="content">
+    <section id="search">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-lg-0 mb-5 my-sm-0">
+          <div class="card">
+            <div class="form-outline">
+                <label class="form-label" for="typeNumber">Search User By Email</label>
+                <input type="text" id="typeNumber" class="form-control" [(ngModel)]="user.email" #email/>
+                <button type="button" class="btn btn-primary" (click)="deleteUser(id.value)">SEARCH</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+</div>
