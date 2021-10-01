@@ -53,7 +53,7 @@ export class PlaceorderformComponent implements OnInit {
       //   product:this.product
       // };
       localStorage.setItem('tokenOrder',JSON.stringify(res));
-      this.router.navigate(['/orders']);
+      // this.router.navigate(['/orders']);
     })
   }
 

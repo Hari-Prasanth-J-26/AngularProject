@@ -13,11 +13,11 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Kindly type your id as {{user.id}}</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the id" name="userId" [(ngModel)]="order.user.id" required>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the id" name="userId" [(ngModel)]="order[user.id]" required>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Kindly type your product id as {{product.productId}}</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the product id" name="productId" [(ngModel)]="order.product.productId" required>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the product id" name="productId" [(ngModel)]="order[product.productId]" required>
             </div>
             <button type="button" class="btn btn-primary" (click)="placeOrder()">Confirm</button>
         </form>
