@@ -29,6 +29,7 @@ import { ViewUserIdComponent } from './view-user-id/view-user-id.component';
 import { ViewUsersNameComponent } from './view-users-name/view-users-name.component';
 import { ViewUsersContactComponent } from './view-users-contact/view-users-contact.component';
 import { ViewUsersEmailComponent } from './view-users-email/view-users-email.component';
+import { PlaceorderformComponent } from './placeorderform/placeorderform.component';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { ViewUsersEmailComponent } from './view-users-email/view-users-email.com
     ViewUsersNameComponent,
     ViewUsersContactComponent,
     ViewUsersEmailComponent,
+    PlaceorderformComponent,
   
   ],
   imports: [

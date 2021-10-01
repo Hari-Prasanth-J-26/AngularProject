@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MainService } from '../main.service';
 
 import { SearchNameComponent } from './search-name.component';
 
@@ -8,7 +12,9 @@ describe('SearchNameComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchNameComponent ]
+      declarations: [ SearchNameComponent ],
+      imports: [ HttpClientModule, FormsModule, RouterTestingModule ],
+      providers: [MainService]
     })
     .compileComponents();
   }));

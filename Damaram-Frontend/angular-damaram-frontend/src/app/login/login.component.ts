@@ -61,6 +61,7 @@ export class LoginComponent implements OnInit{
 
   public registerUser(): void {
     this.service.registerUser(this.user).subscribe(res => {
+      console.log(res);
       this.user = new User();
     })
   }

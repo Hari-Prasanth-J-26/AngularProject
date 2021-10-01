@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MainService } from '../main.service';
 
 import { ViewUsersComponent } from './view-users.component';
 
@@ -8,7 +12,9 @@ describe('ViewUsersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ViewUsersComponent ]
+      declarations: [ ViewUsersComponent ],
+      imports: [HttpClientModule, FormsModule, RouterTestingModule],
+      providers: [MainService]
     })
     .compileComponents();
   }));

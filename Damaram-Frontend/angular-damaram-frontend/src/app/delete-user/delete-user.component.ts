@@ -13,7 +13,9 @@ export class DeleteUserComponent implements OnInit {
   private id: number;
   private user: User;
 
-  constructor(private service: MainService, private router: Router) { }
+  constructor(private service: MainService, private router: Router) {
+    
+   }
 
   ngOnInit() {
     
@@ -33,6 +35,7 @@ export class DeleteUserComponent implements OnInit {
 
   public deleteUser(id: number): void {
     this.service.deleteUser(id).subscribe(res => {
+      this.user=res;
     this.router.navigate(['/viewusers']);
     })
   }

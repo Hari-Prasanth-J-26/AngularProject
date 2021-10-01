@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MainService } from '../main.service';
 
 import { PlaceorderComponent } from './placeorder.component';
 
@@ -8,7 +12,9 @@ describe('PlaceorderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PlaceorderComponent ]
+      declarations: [ PlaceorderComponent ],
+      imports: [HttpClientModule, FormsModule, RouterTestingModule],
+      providers: [MainService]
     })
     .compileComponents();
   }));

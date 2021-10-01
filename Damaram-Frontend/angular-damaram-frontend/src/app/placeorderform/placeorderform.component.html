@@ -1,0 +1,25 @@
+<div class="sidebar">
+    <a routerLink="/userhome">PROFILE</a>
+    <a routerLink="/services">SERVICES</a>
+    <a routerLink="/order">ORDERS</a>
+    <a routerLink="/home">SIGNOUT</a>
+</div>
+<div class="content">
+    <section id="rform" >
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Kindly type placed here</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Placed" name="orderStatus" [(ngModel)]="order.orderStatus" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Kindly type your id as {{user.id}}</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the id" name="userId" [(ngModel)]="order.user.id" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Kindly type your product id as {{product.productId}}</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter the product id" name="productId" [(ngModel)]="order.product.productId" required>
+            </div>
+            <button type="button" class="btn btn-primary" (click)="placeOrder()">Confirm</button>
+        </form>
+    </section>
+</div>

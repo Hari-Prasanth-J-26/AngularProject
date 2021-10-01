@@ -1,26 +1,26 @@
 import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MainService } from '../main.service';
 
-import { SearchContactComponent } from './search-contact.component';
+import { PlaceorderformComponent } from './placeorderform.component';
 
-describe('SearchContactComponent', () => {
-  let component: SearchContactComponent;
-  let fixture: ComponentFixture<SearchContactComponent>;
+describe('PlaceorderformComponent', () => {
+  let component: PlaceorderformComponent;
+  let fixture: ComponentFixture<PlaceorderformComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SearchContactComponent ],
-      imports: [RouterTestingModule, HttpClientModule, FormsModule],
+      declarations: [ PlaceorderformComponent ],
+      imports: [HttpClientModule, RouterTestingModule, FormsModule, ReactiveFormsModule],
       providers: [MainService]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SearchContactComponent);
+    fixture = TestBed.createComponent(PlaceorderformComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

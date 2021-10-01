@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { MainService } from '../main.service';
 
 import { AdminhomeComponent } from './adminhome.component';
 
@@ -8,7 +12,9 @@ describe('AdminhomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AdminhomeComponent ]
+      declarations: [ AdminhomeComponent ],
+      imports:[FormsModule, RouterTestingModule, HttpClientModule],
+      providers:[MainService]
     })
     .compileComponents();
   }));
@@ -22,4 +28,9 @@ describe('AdminhomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('testing title', () => {
+    expect(component.componentName).toBe("adminhome");
+  });
+
 });

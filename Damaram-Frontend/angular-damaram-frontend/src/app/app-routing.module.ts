@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PlaceorderComponent } from './placeorder/placeorder.component';
+import { PlaceorderformComponent } from './placeorderform/placeorderform.component';
 import { RequirementformComponent } from './requirementform/requirementform.component';
 import { SearchContactComponent } from './search-contact/search-contact.component';
 import { SearchEmailComponent } from './search-email/search-email.component';
@@ -45,7 +46,8 @@ const routes: Routes = [
   {path:'viewuserid', component: ViewUserIdComponent},
   {path:'viewusersname', component: ViewUsersNameComponent},
   {path:'viewusersemail', component: ViewUsersEmailComponent},
-  {path:'viewuserscontact', component: ViewUsersContactComponent}
+  {path:'viewuserscontact', component: ViewUsersContactComponent},
+  {path:'placeorderform', component: PlaceorderformComponent}
 ];
 
 @NgModule({
